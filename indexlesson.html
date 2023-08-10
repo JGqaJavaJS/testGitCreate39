@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poem</title>
+    <style>
+    p {
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+    background: yellow
+    }
+    span {
+    font-style: italic;
+    color: green
+    }
+    .inputs {
+    background: grey;
+    color: white
+    }
+    #inp_pass {
+    background: grey;
+    color: magenta
+    }
+    .class_green {
+    background: grey;
+    color: green
+    }
+
+    </style>
+</head>
+<body>
+<p>Roses are red,</p>
+<div>My    <b>name     is</b>       <i>Dave.</i></div>
+<span>This poem makes no sense.</span>
+<p style="color:blue">
+    Microwave!
+</p>
+<br>
+<span>Hello, world!</span>
+<h1>Document Object Model</h1>
+<hr>
+<input class="inputs" type="text">
+<input class="inputs" type="number">
+<input type="button">
+<input type="submit">
+<input style="color:blue" id="inp_pass" class="class_green" type="password">
+<hr>
+<h2>Calculator</h2>
+
+<button id="sumBtn">Sum</button>
+<input type="number" id="operand1">
+<span>+</span>
+<input type="number" id="operand2">
+<span>=</span>
+<span id="result"></span>
+<p></p>
+
+<button id="difBtn">Diff</button>
+<input type="number" id="operand3">
+<span>-</span>
+<input type="number" id="operand4">
+<span>=</span>
+<span id="result_dif"></span>
+
+<script>
+    let operand1 = document.querySelector('#operand1');
+    let operand2 = document.querySelector('#operand2');
+    let sumBtn = document.querySelector('#sumBtn');
+    let result = document.querySelector('#result');
+    sumBtn.onclick = function(){
+    let res = +operand1.value + +operand2.value;
+    console.log(res);
+    result.innerText = res;
+    }
+</script>
+<script>
+    let operand3 = document.querySelector('#operand3');
+    let operand4 = document.querySelector('#operand4');
+    let difBtn = document.querySelector('#difBtn');
+    let result_dif = document.querySelector('#result_dif');
+    difBtn.onclick = function(){
+    let res = +operand3.value - +operand4.value;
+    console.log(res);
+    result_dif.innerText = res;
+    }
+</script>
+
+</body>
+</html>
+
+<!--<читай>-->
+<!--<громко>однажды в студеную зимнюю пору</громко>-->
+<!--<тихо>сижу за решеткой </тихо>-->
+<!--<умеренно/>в темнице сырой-->
+<!--</читай>-->
