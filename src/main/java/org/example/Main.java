@@ -19,6 +19,11 @@ public class Main {
 //        abstractExample.func2();
 
         AbstractExample abstractExample = new AbstractExample("abstract") {
+            @Override
+            public void func1() {
+
+            }
+
             public void somesome() {
                 System.out.println("somesome");
             }
@@ -34,12 +39,13 @@ public class Main {
         son.somesome();
 
      //   SonOfAbstractClass son2 = (SonOfAbstractClass) abstractExample;
-        AbstractExample ab2 = (AbstractExample) son;
+        AbstractExample ab2 = (AbstractExample) son; //new AbstrClassOut
         System.out.println("-----------_________________________ " + ab2.getSome());
 
         son.somesome();
+       // ab2.somesome();
 
-        son = (SonOfAbstractClass) son;
+       // son = (AbstractExample) son;
 
         AllAnimals allAnimals = new AllAnimals() {
             @Override
