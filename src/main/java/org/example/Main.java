@@ -1,12 +1,45 @@
 package org.example;
 
-import animalsobjects.AllAnimals;
-import animalsobjects.Cat;
-import animalsobjects.CatNotMya;
-import animalsobjects.SuperDog;
+import animalsobjects.*;
 
 public class Main {
     public static void main(String[] args) {
+
+//        AbstractExample abstractExample = new AbstractExample("some") {
+//            @Override
+//            public void func1() {
+//                System.out.println("abstract class created");
+//            }
+//            @Override
+//            public void func2() {
+//                System.out.println("funct 2 from son class from main");
+//            }
+//        };
+//        abstractExample.func1();
+//        abstractExample.func2();
+
+        AbstractExample abstractExample = new AbstractExample("abstract") {
+            public void somesome() {
+                System.out.println("somesome");
+            }
+        };
+        abstractExample.func2();
+       // abstractExample.getSome();
+        System.out.println("abstract " + abstractExample.getSome());
+       // abstractExample.somesome();
+
+        SonOfAbstractClass son = new SonOfAbstractClass("son");
+        son.func2();
+        System.out.println("abstract " + son.getSome());
+        son.somesome();
+
+     //   SonOfAbstractClass son2 = (SonOfAbstractClass) abstractExample;
+        AbstractExample ab2 = (AbstractExample) son;
+        System.out.println("-----------_________________________ " + ab2.getSome());
+
+        son.somesome();
+
+        son = (AbstractExample) son;
 
         AllAnimals allAnimals = new AllAnimals() {
             @Override

@@ -15,8 +15,7 @@ public abstract class AbstractExample {
     public void setSome(String some) {
         this.some = some;
     }
-
-    public abstract void func1();
+//    public abstract void func1();
 
     public void func2() {
         System.out.println("funct 2");
