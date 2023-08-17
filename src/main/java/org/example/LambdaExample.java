@@ -14,7 +14,7 @@ public class LambdaExample {
         // Using lambda expression to print all elements
         // of arrL
         arrL.forEach(n -> System.out.println(n));
-        arrL.forEach(System.out::println); // OurObject::someMethod
+        arrL.forEach(System.out::println); // OurObject::someMethod  objectName.someMethod()
 
         System.out.println("-------------------------------------------------");
 

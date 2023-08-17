@@ -1,7 +1,10 @@
 package org.example;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MainStream {
 
@@ -10,9 +13,17 @@ public class MainStream {
 
         // Using filter to select even numbers from the list
         List<Integer> evenNumbers = numbers.stream()
-                .filter(number -> number % 2 == 0)
+                .filter(some -> some % 2 == 0)
                 .collect(Collectors.toList());
 
         System.out.println("Even numbers: " + evenNumbers);
+
+        Map<String, Integer> map = new HashMap<>();
+        map.put("one", 1);
+        map.put("two", 2);
+        map.put("three", 3);
+
+        Stream<Map.Entry<String, Integer>> entryStream = map.entrySet().stream();
+        entryStream.forEach(entry -> System.out.println(entry.getKey() + ": " + entry.getValue()));
     }
 }
