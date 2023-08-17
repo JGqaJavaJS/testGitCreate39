@@ -39,7 +39,7 @@ public class Main {
 
         son.somesome();
 
-        son = (AbstractExample) son;
+        son = (SonOfAbstractClass) son;
 
         AllAnimals allAnimals = new AllAnimals() {
             @Override
