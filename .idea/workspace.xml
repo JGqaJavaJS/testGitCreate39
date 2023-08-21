@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc8df5ec-5666-4bb3-a14d-bcc025563184" name="Changes" comment="upd try catch">
-      <change afterPath="$PROJECT_DIR$/some.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TryCatchFile.java" afterDir="false" />
+    <list default="true" id="cc8df5ec-5666-4bb3-a14d-bcc025563184" name="Changes" comment="file tri catch and closable interface">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/arrayExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TryCatchExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TryCatchExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,20 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TryCatchFile">
+  <component name="RunManager" selected="Application.ArrayExample">
+    <configuration name="ArrayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ArrayExample" />
+      <module name="testGitCreate39.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="testGitCreate39.main" />
@@ -129,6 +142,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayExample" />
         <item itemvalue="Application.TryCatchFile" />
         <item itemvalue="Application.TryCatchExample" />
         <item itemvalue="Application.MainStream" />
@@ -217,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692293422605</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="file tri catch and closable interface">
+      <option name="closed" value="true" />
+      <created>1692635459065</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692635459065</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +262,22 @@
     <MESSAGE value="upd abstract class" />
     <MESSAGE value="upd abstract class son" />
     <MESSAGE value="upd try catch" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd try catch" />
+    <MESSAGE value="file tri catch and closable interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="file tri catch and closable interface" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/arrayExample.java</url>
+          <line>4</line>
+          <properties class="org.example.arrayExample" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
