@@ -1,0 +1,42 @@
+1. проблема: не запускаются тесты в хроме, решение:
+
+При обновлении браузера хром до 116 версии:
+
+https://googlechromelabs.github.io/chrome-for-testing/
+скачать версию stable chromedriver
+распаковать
+файл хромдрайвера положить в проект, example for my path:
+/Users/julia/Documents/java/qa39/testGitCreate39/chromedriver
+работает с кодом:
+
+@BeforeClass
+    public void preconditions() {
+        driver = new ChromeDriver();
+        driver.get("https://ilcarro.web.app");
+        driver.manage().window().maximize();
+    }
+
+2. проблема: не запускаются тесты в файрфокс с вебдрайвер менеджер, решение:
+
+запускать в браузере файрфокс с кодом:
+
+    @BeforeClass
+    public void preconditions() {
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver(firefoxOptions);
+        driver.get("https://ilcarro.web.app");
+        driver.manage().window().maximize();
+
+    }
+
+все импорты есть в проекте на гитхабе
+
+3. проблема: не запускается, если хром в папке тулс
+если оставляю хромдрайвер, только в папке тулс - получаю поп ап с ошибкой:
+"“chromedriver” can’t be opened because Apple cannot check it for malicious software."
+если у вас такая же ошибка на виндоусе, напишите мне со скриншотом ошибки
+
+https://zoom.cnews.ru/news/item/500323 - ждем пока гугл починит баг
+
+4. Запустить через вебдрайверменеджер и гугл хром - в процессе

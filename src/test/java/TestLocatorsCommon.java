@@ -17,18 +17,18 @@ public class TestLocatorsCommon {
 
     @BeforeClass
     public void preconditions() {
-
                 driver = new ChromeDriver();
+
 //        ChromeOptions chromeOptions = new ChromeOptions();
 //        WebDriverManager.chromedriver().setup();
-//        WebDriver driver = new ChromeDriver(chromeOptions);
+//        driver = new ChromeDriver(chromeOptions);
 
 //        FirefoxOptions firefoxOptions = new FirefoxOptions();
 //        WebDriverManager.firefoxdriver().setup();
 //        driver = new FirefoxDriver(firefoxOptions);
+
         driver.get("https://ilcarro.web.app");
         driver.manage().window().maximize();
-
     }
 
     @Test
@@ -39,10 +39,10 @@ public class TestLocatorsCommon {
         WebElement elementTerms = driver.findElement(By.partialLinkText("Terms of use"));
         elementTerms.click();
         Thread.sleep(5000);
+
         WebElement elementSearch = driver.findElement(By.partialLinkText("Search"));
         elementSearch.click();
         Thread.sleep(5000);
-
 
 
     }
