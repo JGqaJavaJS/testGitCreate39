@@ -83,6 +83,9 @@ Database Connectivity (Optional):
 
 JDBC (Java Database Connectivity)
 ORM Frameworks (Hibernate, JPA)
-Remember that Java is a vast programming language with a wide range of applications. Depending on your interests and career goals, you can delve deeper into specific areas like web development, mobile app development (using Android), desktop applications, game development, and more.
+Remember that Java is a vast programming language with a wide range of applications.
+Depending on your interests and career goals, you can delve deeper into specific areas
+ like web development, mobile app development (using Android), desktop applications, game development, and more.
 
-Start by grasping the basics and gradually build your understanding of these topics to become a proficient Java programmer.
+Start by grasping the basics and gradually build your understanding
+ of these topics to become a proficient Java programmer.
