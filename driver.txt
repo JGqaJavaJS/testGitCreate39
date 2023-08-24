@@ -39,4 +39,6 @@ https://googlechromelabs.github.io/chrome-for-testing/
 
 https://zoom.cnews.ru/news/item/500323 - ждем пока гугл починит баг
 
-4. Запустить через вебдрайверменеджер и гугл хром - в процессе
+4. Запустить через вебдрайверменеджер и гугл хром
+
+        driver = WebDriverManager.chromedriver().create();
