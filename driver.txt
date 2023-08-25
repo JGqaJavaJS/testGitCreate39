@@ -22,9 +22,7 @@ https://googlechromelabs.github.io/chrome-for-testing/
 
     @BeforeClass
     public void preconditions() {
-        FirefoxOptions firefoxOptions = new FirefoxOptions();
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver(firefoxOptions);
+driver = WebDriverManager.firefoxdriver().create();
         driver.get("https://ilcarro.web.app");
         driver.manage().window().maximize();
 

@@ -18,7 +18,7 @@ public class TestLocatorsCommon {
     @BeforeClass
     public void preconditions() {
         // if the driver in the folder tools or in the project (need to update driver if chrome update)
-           //     driver = new ChromeDriver();
+      //          driver = new ChromeDriver();
 
         // old version for the WebDriverManager for chrome
 //        ChromeOptions chromeOptions = new ChromeOptions();
