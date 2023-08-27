@@ -18,15 +18,20 @@ public class TestLocatorsCommon {
     @BeforeClass
     public void preconditions() {
         // if the driver in the folder tools or in the project (need to update driver if chrome update)
-      //          driver = new ChromeDriver();
+                driver = new ChromeDriver();
+
+//        driver = new ChromeDriver();
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--remote-allow-origins=*");
+//        driver = new ChromeDriver(options);
 
         // old version for the WebDriverManager for chrome
 //        ChromeOptions chromeOptions = new ChromeOptions();
-    //    WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().setup();
 //        driver = new ChromeDriver(chromeOptions);
 
         // new version for WDM chrome
-        driver = WebDriverManager.chromedriver().create();
+       //     driver = WebDriverManager.chromedriver().create();
 
         // old version for the WebDriverManager for firefox
 //        FirefoxOptions firefoxOptions = new FirefoxOptions();
@@ -34,7 +39,7 @@ public class TestLocatorsCommon {
 //        driver = new FirefoxDriver(firefoxOptions);
 
         // new version for WDM firefox
-      //  driver = WebDriverManager.firefoxdriver().create();
+     //   driver = WebDriverManager.firefoxdriver().create();
 
 
         driver.get("https://ilcarro.web.app");

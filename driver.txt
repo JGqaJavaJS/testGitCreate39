@@ -40,3 +40,9 @@ https://zoom.cnews.ru/news/item/500323 - ждем пока гугл почини
 4. Запустить через вебдрайверменеджер и гугл хром
 
         driver = WebDriverManager.chromedriver().create();
+
+5. For windows solution should be with:
+//        driver = new ChromeDriver();
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--remote-allow-origins=*");
+//        driver = new ChromeDriver(options);
