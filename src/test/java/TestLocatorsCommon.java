@@ -31,7 +31,7 @@ public class TestLocatorsCommon {
 //        driver = new ChromeDriver(chromeOptions);
 
         // new version for WDM chrome
-       //     driver = WebDriverManager.chromedriver().create();
+        //    driver = WebDriverManager.chromedriver().create();
 
         // old version for the WebDriverManager for firefox
 //        FirefoxOptions firefoxOptions = new FirefoxOptions();
@@ -39,7 +39,7 @@ public class TestLocatorsCommon {
 //        driver = new FirefoxDriver(firefoxOptions);
 
         // new version for WDM firefox
-     //   driver = WebDriverManager.firefoxdriver().create();
+    //    driver = WebDriverManager.firefoxdriver().create();
 
 
         driver.get("https://ilcarro.web.app");
